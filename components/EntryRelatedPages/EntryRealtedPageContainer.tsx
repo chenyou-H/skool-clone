@@ -7,7 +7,9 @@ export default function EntryRealtedPageContainer({ children }) {
   return (
     <main className={`${styles.main}`}>
       <EntryPageHeader />
-      {children}
+      <div className={styles.content} data-testid="content">
+        {children}
+      </div>
       <EntryPageFooter />
     </main>
   );
