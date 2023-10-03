@@ -14,7 +14,7 @@ const theme = createTheme({
   },
 });
 
-export const StyledButton = styled(Button)`
+const StyledButton = styled(Button)`
   ${({ theme }) => `
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: bold;

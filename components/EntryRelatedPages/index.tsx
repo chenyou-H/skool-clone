@@ -1,6 +1,7 @@
 export {
   EntryRelatedPageContainer,
-  EntryRelatedPagePageHead,
   EntryRelatedPageTitle,
   EntryRelatedPageDescription,
 } from "./shared";
+
+export { PricingCard } from "./PricingCard";

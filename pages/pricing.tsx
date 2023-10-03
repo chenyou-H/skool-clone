@@ -1,12 +1,12 @@
 import React from "react";
 
 import {
-  EntryRelatedPagePageHead,
   EntryRelatedPageContainer,
   EntryRelatedPageTitle,
   EntryRelatedPageDescription,
+  PricingCard,
 } from "@/components/EntryRelatedPages";
-import { PricingCard } from "@/components/EntryRelatedPages/PricingCard";
+import PageHead from "@/components/shared/PageHead";
 
 export default function Pricing() {
   const headTitle = "Skool: Pricing";
@@ -14,10 +14,7 @@ export default function Pricing() {
     "Simple pricing. 1 plan with everything included. No hidden fees. Get started with a 14-day free trial. Cancel anytime.";
   return (
     <>
-      <EntryRelatedPagePageHead
-        title={headTitle}
-        content={headDescriptionContent}
-      />
+      <PageHead title={headTitle} content={headDescriptionContent} />
       <EntryRelatedPageContainer>
         <EntryRelatedPageTitle>Simple pricing</EntryRelatedPageTitle>
         <EntryRelatedPageDescription>
