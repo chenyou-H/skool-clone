@@ -10,7 +10,9 @@ import CheckCircleSharpIcon from "@mui/icons-material/CheckCircleSharp";
 
 import {
   EntryRelatedPagePageHead,
-  EntryRealtedPageContainer,
+  EntryRelatedPageContainer,
+  EntryRelatedPageTitle,
+  EntryRealtedPageDescription,
 } from "@/components/EntryRelatedPages";
 
 export default function Pricing() {
@@ -23,14 +25,16 @@ export default function Pricing() {
         title={headTitle}
         content={headDescriptionContent}
       />
-      <EntryRealtedPageContainer>
-        <>
-          <h1>Simple pricing</h1>
-          <p>1 plan with everything included. No hidden fees.</p>
-          <p>Get started with a 14-day free trial. Cancel anytime.</p>
-          <Card>
+      <EntryRelatedPageContainer>
+        <section>
+          <EntryRelatedPageTitle>Simple pricing</EntryRelatedPageTitle>
+          <EntryRealtedPageDescription>
+            1 plan with everything included. No hidden fees.
+            <br /> Get started with a 14-day free trial. Cancel anytime.
+          </EntryRealtedPageDescription>
+          <Card sx={{ margin: "56px 0px 0px 0px" }}>
             <CardContent>
-              <h1>$99/month</h1>
+              <EntryRelatedPageTitle>$99/month</EntryRelatedPageTitle>
               <div>
                 <Typography>
                   <CheckCircleSharpIcon />1 group
@@ -53,8 +57,8 @@ export default function Pricing() {
               <Button>START 14-DAY FREE TRIAL</Button>
             </CardActions>
           </Card>
-        </>
-      </EntryRealtedPageContainer>
+        </section>
+      </EntryRelatedPageContainer>
     </>
   );
 }
