@@ -13,11 +13,11 @@ interface PrimaryButtonProps {
 function PrimaryButton({ children, onClick, href }: PrimaryButtonProps) {
   return (
     <Button
-      variant="contained"
-      fullWidth
       className={styles.btn}
+      variant="contained"
       onClick={onClick}
       href={href}
+      fullWidth
     >
       {children}
     </Button>
