@@ -2,5 +2,5 @@ export {
   EntryRelatedPageContainer,
   EntryRelatedPagePageHead,
   EntryRelatedPageTitle,
-  EntryRealtedPageDescription,
+  EntryRelatedPageDescription,
 } from "./shared";

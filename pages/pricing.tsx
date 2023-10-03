@@ -4,7 +4,7 @@ import {
   EntryRelatedPagePageHead,
   EntryRelatedPageContainer,
   EntryRelatedPageTitle,
-  EntryRealtedPageDescription,
+  EntryRelatedPageDescription,
 } from "@/components/EntryRelatedPages";
 import { PricingCard } from "@/components/EntryRelatedPages/PricingCard";
 
@@ -20,10 +20,10 @@ export default function Pricing() {
       />
       <EntryRelatedPageContainer>
         <EntryRelatedPageTitle>Simple pricing</EntryRelatedPageTitle>
-        <EntryRealtedPageDescription>
+        <EntryRelatedPageDescription>
           1 plan with everything included. No hidden fees.
           <br /> Get started with a 14-day free trial. Cancel anytime.
-        </EntryRealtedPageDescription>
+        </EntryRelatedPageDescription>
         <PricingCard />
       </EntryRelatedPageContainer>
     </>

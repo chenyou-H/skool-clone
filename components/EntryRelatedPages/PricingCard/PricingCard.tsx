@@ -1,14 +1,17 @@
+//react components
 import React from "react";
 
+//mui components
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { styled } from "@mui/material/styles";
 
+// custom components
 import { EntryRelatedPageTitle } from "../shared";
 import TypographyWithIcon from "./TypographyWithIcon";
-import { styled } from "@mui/material/styles";
 
 const StyledPriceCard = styled(Card)({
   margin: "24px 0px 0px 0px",

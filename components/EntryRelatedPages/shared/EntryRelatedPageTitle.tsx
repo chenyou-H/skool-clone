@@ -1,15 +1,23 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "@/styles/Entry.module.css";
 
-export default function EntryRelatedPageTitle({ children, variant }) {
-  let additionalStyles = {};
+interface EntryRelatedPageTitleProps {
+  variant?: "subtitle";
+  children: ReactNode;
+}
+
+export default function EntryRelatedPageTitle({
+  children,
+  variant,
+}: EntryRelatedPageTitleProps) {
+  let titleStyles = {};
   if (variant === "subtitle") {
-    additionalStyles = {
+    titleStyles = {
       fontSize: "35px",
     };
   }
   return (
-    <div className={styles.title} style={additionalStyles}>
+    <div className={styles.title} style={titleStyles}>
       {children}
     </div>
   );

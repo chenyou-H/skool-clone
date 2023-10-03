@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
@@ -12,7 +12,15 @@ const StyledCheckCircleIcon = styled(CheckCircleSharpIcon)({
   padding: " 0",
 });
 
-export default function TypographyWithIcon({ iconColor, children }) {
+interface TypographyWithIconProps {
+  children: ReactNode;
+  iconColor: string;
+}
+
+export default function TypographyWithIcon({
+  iconColor,
+  children,
+}: TypographyWithIconProps) {
   return (
     <Stack direction="row" alignItems="center" spacing={2}>
       <StyledCheckCircleIcon sx={{ color: iconColor }} />
