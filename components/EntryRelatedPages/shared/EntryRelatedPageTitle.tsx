@@ -5,7 +5,7 @@ export default function EntryRelatedPageTitle({ children, variant }) {
   let additionalStyles = {};
   if (variant === "subtitle") {
     additionalStyles = {
-      "font-size": "35px",
+      fontSize: "35px",
     };
   }
   return (

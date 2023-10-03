@@ -6,7 +6,7 @@ import {
   EntryRelatedPageTitle,
   EntryRealtedPageDescription,
 } from "@/components/EntryRelatedPages";
-import PricingCard from "@/components/EntryRelatedPages/PricingCard";
+import { PricingCard } from "@/components/EntryRelatedPages/PricingCard";
 
 export default function Pricing() {
   const headTitle = "Skool: Pricing";
@@ -19,14 +19,12 @@ export default function Pricing() {
         content={headDescriptionContent}
       />
       <EntryRelatedPageContainer>
-        <main>
-          <EntryRelatedPageTitle>Simple pricing</EntryRelatedPageTitle>
-          <EntryRealtedPageDescription>
-            1 plan with everything included. No hidden fees.
-            <br /> Get started with a 14-day free trial. Cancel anytime.
-          </EntryRealtedPageDescription>
-          <PricingCard />
-        </main>
+        <EntryRelatedPageTitle>Simple pricing</EntryRelatedPageTitle>
+        <EntryRealtedPageDescription>
+          1 plan with everything included. No hidden fees.
+          <br /> Get started with a 14-day free trial. Cancel anytime.
+        </EntryRealtedPageDescription>
+        <PricingCard />
       </EntryRelatedPageContainer>
     </>
   );

@@ -6,6 +6,12 @@ interface EntryRelatedPageHeadProps {
   content: string;
 }
 
+/**
+ * EntryRelatedPageHead component renders the head elements for related pages.
+ * @param {string} title - The title of the page.
+ * @param {string} content - The meta description content of the page.
+ */
+
 export default function EntryRelatedPageHead({
   title,
   content,
