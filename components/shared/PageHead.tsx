@@ -1,21 +1,18 @@
 import React from "react";
 import Head from "next/head";
 
-interface EntryRelatedPageHeadProps {
+interface PageHeadProps {
   title: string;
   content: string;
 }
 
 /**
- * EntryRelatedPageHead component renders the head elements for related pages.
+ * PageHead component renders the head elements for related pages.
  * @param {string} title - The title of the page.
  * @param {string} content - The meta description content of the page.
  */
 
-export default function EntryRelatedPageHead({
-  title,
-  content,
-}: EntryRelatedPageHeadProps) {
+export default function PageHead({ title, content }: PageHeadProps) {
   return (
     <Head>
       <title>{title}</title>
