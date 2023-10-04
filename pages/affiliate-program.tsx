@@ -9,7 +9,7 @@ import {
 } from "@/components/EntryRelatedPages";
 import PageHead from "@/components/shared/PageHead";
 import { PrimaryButton } from "@/components/shared";
-import { AffiliateCardContainer } from "@/components/EntryRelatedPages/AffiliateCard";
+import { AffiliateStepList } from "@/components/EntryRelatedPages/AffiliateCard";
 
 export default function affiliateProgram() {
   const headTitle = "Skool: Affiliate Program";
@@ -38,11 +38,7 @@ export default function affiliateProgram() {
           {/* todo: button link need to be modified later when the job website is implemented*/}
           <PrimaryButton href="/affiliates">BECOME AN AFFILAITE</PrimaryButton>
         </Box>
-        <AffiliateCardContainer
-          title={cardTitle}
-          descripton={cardDescriotion}
-          imgUrl={"/affiliateStep1.png"}
-        />
+        <AffiliateStepList />
       </EntryRelatedPageContainer>
     </>
   );
