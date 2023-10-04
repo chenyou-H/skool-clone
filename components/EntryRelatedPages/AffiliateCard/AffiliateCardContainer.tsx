@@ -5,6 +5,19 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 export default function AffiliateCardContainer({ title, description, imgUrl }) {
+  if (imgUrl === undefined) {
+    return (
+      <Box>
+        <Typography
+          sx={{ fontSize: "20px", fontWeight: "bold", margin: "0 0 8px 0" }}
+        >
+          {title}
+        </Typography>
+        <Typography>{description}</Typography>
+      </Box>
+    );
+  }
+
   return (
     <Box>
       <Box
@@ -17,19 +30,17 @@ export default function AffiliateCardContainer({ title, description, imgUrl }) {
           margin: "0 0 16px 0",
         }}
       >
-        {imgUrl && (
-          <Image
-            src={imgUrl}
-            alt={title}
-            // fill={true}
-            width={335}
-            height={102}
-            style={{
-              borderRadius: "10px",
-              overflow: "clip",
-            }}
-          />
-        )}
+        <Image
+          src={imgUrl}
+          alt={title}
+          // fill={true}
+          width={335}
+          height={102}
+          style={{
+            borderRadius: "10px",
+            overflow: "clip",
+          }}
+        />
       </Box>
       <Typography
         sx={{ fontSize: "20px", fontWeight: "bold", margin: "0 0 8px 0" }}
