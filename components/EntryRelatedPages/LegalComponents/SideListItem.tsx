@@ -53,9 +53,7 @@ export default function SideListItem() {
               },
             }}
           >
-            {/* <StyledListItemButton> */}
             <ListItemText primary={item} />
-            {/* </StyledListItemButton> */}
           </ListItemButton>
         </ListItem>
       ))}

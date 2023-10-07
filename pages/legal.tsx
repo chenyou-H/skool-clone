@@ -1,13 +1,13 @@
 import React from "react";
 
-import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 
 import PageHead from "@/components/shared/PageHead";
 import {
   LegalContentContainer,
   SideList,
-  LegalPageContainer,
 } from "@/components/EntryRelatedPages/LegalComponents";
 
 const title = "Skool policies";
@@ -18,18 +18,18 @@ export default function legal() {
   return (
     <>
       <PageHead title={title} content={content} />
-      <LegalPageContainer>
-        <main>
-          <Grid container spacing={2} sx={{ backgroundColor: "#F8F7F5" }}>
-            <Grid item xs={5} sx={{ overflow: "clip" }}>
+      <Box sx={{ backgroundColor: "#F8F7F5" }}>
+        <Container maxWidth="lg">
+          <Grid container spacing={1}>
+            <Grid item xs={4} sx={{ overflow: "clip" }}>
               <SideList />
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={8}>
               <LegalContentContainer />
             </Grid>
           </Grid>
-        </main>
-      </LegalPageContainer>
+        </Container>
+      </Box>
     </>
   );
 }
