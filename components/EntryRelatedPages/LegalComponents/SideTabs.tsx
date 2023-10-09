@@ -14,6 +14,11 @@ const tabList = [
   "Acceptable use",
 ];
 
+interface SideTabsProps {
+  value: number;
+  handleChange: () => void;
+}
+
 function a11yProps(index: number) {
   return {
     id: `simple-tab-${index}`,
@@ -21,7 +26,7 @@ function a11yProps(index: number) {
   };
 }
 
-export default function SideTabs({ value, handleChange }) {
+export default function SideTabs({ value, handleChange }: SideTabsProps) {
   return (
     <Tabs
       value={value}
@@ -30,7 +35,24 @@ export default function SideTabs({ value, handleChange }) {
       orientation="vertical"
     >
       {tabList.map((tab, index) => (
-        <Tab key={tab} label={tab} {...a11yProps(index)} />
+        <Tab
+          key={tab}
+          label={tab}
+          {...a11yProps(index)}
+          sx={{
+            color: "black",
+            borderRadius: "10px",
+            padding: "0 16px 0 16px",
+            "&:focus": {
+              color: "black",
+              backgroundColor: "rgb(250, 227, 172)",
+            },
+            "&:select": {
+              color: "black",
+              backgroundColor: "rgb(250, 227, 172)",
+            },
+          }}
+        />
       ))}
     </Tabs>
   );
