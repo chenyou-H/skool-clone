@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -56,15 +56,36 @@ const theme = createTheme({
   },
 });
 
-export default function LegalContentContainer() {
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+
+export default function LegalContentContainer(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ backgroundColor: "white" }}>
+      {/* <Box sx={{ backgroundColor: "white" }}>
         <Paper sx={{ padding: "32px" }}>
-          {/* <SkoolRulesContent /> */}
+          <SkoolRulesContent />
           <PrivacyPolicyContent />
         </Paper>
-      </Box>
+      </Box> */}
+
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`simple-tabpanel-${index}`}
+        aria-labelledby={`simple-tab-${index}`}
+        {...other}
+      >
+        {value === index && (
+          <Box sx={{ backgroundColor: "white" }}>
+            <Paper sx={{ padding: "32px" }}>{children}</Paper>
+          </Box>
+        )}
+      </div>
     </ThemeProvider>
   );
 }

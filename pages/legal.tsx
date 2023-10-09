@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -8,13 +8,22 @@ import PageHead from "@/components/shared/PageHead";
 import {
   LegalContentContainer,
   SideList,
+  SideTabs,
 } from "@/components/EntryRelatedPages/LegalComponents";
+import SkoolRulesContent from "@/components/EntryRelatedPages/LegalComponents/SkoolRulesContent";
+import PrivacyPolicyContent from "@/components/EntryRelatedPages/LegalComponents/PrivacyPolicyContent";
 
 const title = "Skool policies";
 const content =
   "Skool is a platform where people learn together online. Courses + community + chat. Join now for free!";
 
-export default function legal() {
+export default function Legal() {
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setValue(newValue);
+  };
+
   return (
     <>
       <PageHead title={title} content={content} />
@@ -22,10 +31,15 @@ export default function legal() {
         <Container maxWidth="lg">
           <Grid container spacing={1}>
             <Grid item xs={4} sx={{ overflow: "clip" }}>
-              <SideList />
+              <SideTabs value={value} handleChange={handleChange} />
             </Grid>
             <Grid item xs={8}>
-              <LegalContentContainer />
+              <LegalContentContainer value={value} index={0}>
+                <SkoolRulesContent />
+              </LegalContentContainer>
+              <LegalContentContainer value={value} index={1}>
+                <PrivacyPolicyContent />
+              </LegalContentContainer>
             </Grid>
           </Grid>
         </Container>
