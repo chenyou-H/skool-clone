@@ -794,7 +794,7 @@ export default function PrivacyPolicyContent() {
           relation to this Privacy Policy, please contact us at the following
           contact details:
           <Link underline="none" href="mailto:help@skoolclone.com">
-            help@skool.com
+            help@skoolclone.com
           </Link>
         </Typography>
       </section>

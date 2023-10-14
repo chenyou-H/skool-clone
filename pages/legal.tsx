@@ -7,14 +7,17 @@ import Container from "@mui/material/Container";
 import PageHead from "@/components/shared/PageHead";
 import {
   LegalContentContainer,
-  SideList,
+  // SideList,
   SideTabs,
-} from "@/components/EntryRelatedPages/LegalComponents";
-import SkoolRulesContent from "@/components/EntryRelatedPages/LegalComponents/SkoolRulesContent";
-import PrivacyPolicyContent from "@/components/EntryRelatedPages/LegalComponents/PrivacyPolicyContent";
+  SkoolRulesContent,
+  PrivacyPolicyContent,
+  TermsContent,
+} from "@/components/EntryRelatedPages";
+// import SkoolRulesContent from "@/components/EntryRelatedPages/LegalComponents/contents/SkoolRulesContent";
+// import PrivacyPolicyContent from "@/components/EntryRelatedPages/LegalComponents/contents/PrivacyPolicyContent";
 
-import { useRouter } from "next/router";
-import { useSearchParams } from "next/navigation";
+// import { useRouter } from "next/router";
+// import { useSearchParams } from "next/navigation";
 
 const title = "Skool policies";
 const content =
@@ -29,17 +32,7 @@ export const getServerSideProps = async (context) => {
 export default function Legal({ query }) {
   const [value, setValue] = useState(0);
 
-  let currentContent = null;
-  switch (query.t) {
-    case "rules":
-      currentContent = <SkoolRulesContent />;
-      break;
-    case "privacy":
-      currentContent = <PrivacyPolicyContent />;
-      break;
-    default:
-      currentContent = <SkoolRulesContent />;
-  }
+  let currentContent = findCurrentContentByT(query.t);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -69,3 +62,21 @@ export default function Legal({ query }) {
     </>
   );
 }
+
+const findCurrentContentByT = (param: string | undefined) => {
+  let currentContent = null;
+  switch (param) {
+    case "rules":
+      currentContent = <SkoolRulesContent />;
+      break;
+    case "privacy":
+      currentContent = <PrivacyPolicyContent />;
+      break;
+    case "terms":
+      currentContent = <TermsContent />;
+      break;
+    default:
+      currentContent = <SkoolRulesContent />;
+  }
+  return currentContent;
+};

@@ -6,4 +6,16 @@ export {
 
 export { PricingCard } from "./PricingCard";
 
-export { SideTabs } from "./LegalComponents";
+export {
+  SideTabs,
+  LegalContentContainer,
+  SkoolRulesContent,
+  PrivacyPolicyContent,
+  TermsContent,
+} from "./LegalComponents";
+
+// export {
+//   SkoolRulesContent,
+//   PrivacyPolicyContent,
+//   TermsContent,
+// } from "./LegalComponents/contents";
