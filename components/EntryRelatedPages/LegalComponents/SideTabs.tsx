@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -12,6 +13,15 @@ const tabList = [
   "Cookie policy",
   "Transaction terms",
   "Acceptable use",
+];
+
+const urls = [
+  "/legal?t=rules",
+  "/legal?t=privacy",
+  "legal?t=terms",
+  "legal?t=cookies",
+  "legal?t=transaction",
+  "legal?t=acceptable-use",
 ];
 
 interface SideTabsProps {
@@ -35,24 +45,25 @@ export default function SideTabs({ value, handleChange }: SideTabsProps) {
       orientation="vertical"
     >
       {tabList.map((tab, index) => (
-        <Tab
-          key={tab}
-          label={tab}
-          {...a11yProps(index)}
-          sx={{
-            color: "black",
-            borderRadius: "10px",
-            padding: "0 16px 0 16px",
-            "&:focus": {
+        <Link href={urls[index]} key={tab}>
+          <Tab
+            label={tab}
+            // {...a11yProps(index)}
+            sx={{
               color: "black",
-              backgroundColor: "rgb(250, 227, 172)",
-            },
-            "&:select": {
-              color: "black",
-              backgroundColor: "rgb(250, 227, 172)",
-            },
-          }}
-        />
+              borderRadius: "10px",
+              padding: "0 16px 0 16px",
+              "&:focus": {
+                color: "black",
+                backgroundColor: "rgb(250, 227, 172)",
+              },
+              "&:select": {
+                color: "black",
+                backgroundColor: "rgb(250, 227, 172)",
+              },
+            }}
+          ></Tab>
+        </Link>
       ))}
     </Tabs>
   );

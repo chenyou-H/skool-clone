@@ -73,7 +73,7 @@ export default function LegalContentContainer(props: TabPanelProps) {
         </Paper>
       </Box> */}
 
-      <div
+      {/* <div
         role="tabpanel"
         hidden={value !== index}
         id={`simple-tabpanel-${index}`}
@@ -85,6 +85,11 @@ export default function LegalContentContainer(props: TabPanelProps) {
             <Paper sx={{ padding: "32px" }}>{children}</Paper>
           </Box>
         )}
+      </div> */}
+      <div>
+        <Box sx={{ backgroundColor: "white" }}>
+          <Paper sx={{ padding: "32px" }}>{children}</Paper>
+        </Box>
       </div>
     </ThemeProvider>
   );

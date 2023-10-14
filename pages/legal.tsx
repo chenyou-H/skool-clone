@@ -13,12 +13,33 @@ import {
 import SkoolRulesContent from "@/components/EntryRelatedPages/LegalComponents/SkoolRulesContent";
 import PrivacyPolicyContent from "@/components/EntryRelatedPages/LegalComponents/PrivacyPolicyContent";
 
+import { useRouter } from "next/router";
+import { useSearchParams } from "next/navigation";
+
 const title = "Skool policies";
 const content =
   "Skool is a platform where people learn together online. Courses + community + chat. Join now for free!";
 
-export default function Legal() {
+export const getServerSideProps = async (context) => {
+  const query = context.query;
+  console.log("query: ", query);
+  return { props: { query } };
+};
+
+export default function Legal({ query }) {
   const [value, setValue] = useState(0);
+
+  let currentContent = null;
+  switch (query.t) {
+    case "rules":
+      currentContent = <SkoolRulesContent />;
+      break;
+    case "privacy":
+      currentContent = <PrivacyPolicyContent />;
+      break;
+    default:
+      currentContent = <SkoolRulesContent />;
+  }
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -34,12 +55,13 @@ export default function Legal() {
               <SideTabs value={value} handleChange={handleChange} />
             </Grid>
             <Grid item xs={8}>
-              <LegalContentContainer value={value} index={0}>
+              {/* <LegalContentContainer value={value} index={0}>
                 <SkoolRulesContent />
               </LegalContentContainer>
               <LegalContentContainer value={value} index={1}>
                 <PrivacyPolicyContent />
-              </LegalContentContainer>
+              </LegalContentContainer> */}
+              <LegalContentContainer>{currentContent}</LegalContentContainer>
             </Grid>
           </Grid>
         </Container>
