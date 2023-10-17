@@ -4,9 +4,6 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import SkoolRulesContent from "./contents/SkoolRulesContent";
-import PrivacyPolicyContent from "./contents/PrivacyPolicyContent";
-
 const theme = createTheme({
   typography: {
     h1: {

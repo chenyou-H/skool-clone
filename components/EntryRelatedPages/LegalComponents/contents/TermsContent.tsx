@@ -3,8 +3,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import Link from "next/link";
+import Link from "@mui/material/Link";
 
 export default function TermsContent() {
   return (
@@ -248,12 +247,15 @@ export default function TermsContent() {
         <Typography>
           <u>Payment Methods.</u>
           Admin agrees to the{" "}
-          <Link href="/legal?t=privacy">Privacy Policy</Link> when providing any
-          necessary personal information for the purposes of processing payment
-          for a Skool subscription. Skool may use third-party service providers
-          for payment processing. In such cases, the third-party payment
-          processor’s terms and conditions apply. Please review these
-          third-party terms and conditions before completing payment.
+          <Link underline="none" href="/legal?t=privacy">
+            Privacy Policy
+          </Link>{" "}
+          when providing any necessary personal information for the purposes of
+          processing payment for a Skool subscription. Skool may use third-party
+          service providers for payment processing. In such cases, the
+          third-party payment processor’s terms and conditions apply. Please
+          review these third-party terms and conditions before completing
+          payment.
         </Typography>
         <Typography>
           <u>Subscription Term; Auto Renewal.</u>
@@ -300,7 +302,10 @@ export default function TermsContent() {
           </ListItem>
           <ListItem>
             Send a cancellation request via email to
-            <Link href="matilto:help@skoolclone.com">help@skoolclone.com</Link>
+            <Link underline="none" href="matilto:help@skoolclone.com">
+              {" "}
+              help@skoolclone.com
+            </Link>
           </ListItem>
         </List>
         <Typography>
@@ -316,14 +321,14 @@ export default function TermsContent() {
           injunctive relief, attorney's fees and court costs.
         </Typography>
         <Typography>
-          <u>Account Discrepancies.</u>
-          Admin may contact Skool by e-mail at help@skool.com concerning charges
-          or other questions regarding the status of Admin's account. However,
-          if Admin's account-related questions are not satisfactorily resolved
-          within fifteen (15) business days of Admin's first calling or sending
-          an e-mail to Skool Support regarding such questions, Admin must write
-          to Skool at: SKOOL.COM, Inc., 111 Main St. El Segundo, CA 90245,
-          delivered by United States mail.
+          <u>Account Discrepancies.</u> Admin may contact Skool by e-mail at
+          help@skool.com concerning charges or other questions regarding the
+          status of Admin's account. However, if Admin's account-related
+          questions are not satisfactorily resolved within fifteen (15) business
+          days of Admin's first calling or sending an e-mail to Skool Support
+          regarding such questions, Admin must write to Skool at: SKOOL.COM,
+          Inc., 111 Main St. El Segundo, CA 90245, delivered by United States
+          mail.
         </Typography>
         <Typography>
           Notwithstanding the foregoing, in no event may Admin dispute any
@@ -334,28 +339,30 @@ export default function TermsContent() {
           complaints are waived by Admin.
         </Typography>
         <Typography>
-          <u>Admin/Member Transactions.</u>
-          This section describes the terms which apply to Admin/Member
-          Transactions:
+          <u>Admin/Member Transactions.</u> This section describes the terms
+          which apply to Admin/Member Transactions:
         </Typography>
         <List>
           <ListItem>
-            The
-            <Link href="/legal?t=transaction">
+            The{" "}
+            <Link underline="none" href="/legal?t=transaction">
               Transaction Terms between Admins and Members
-            </Link>
+            </Link>{" "}
             governs and sets out the terms applicable to transactions between
             Members and Admins (“Admin/Member Transaction(s)”).
           </ListItem>
           <ListItem>
             Third-party payment provider terms and conditions, which include
-            Stripe's
-            <Link href="https://stripe.com/legal/ssa">
+            Stripe's{" "}
+            <Link underline="none" href="https://stripe.com/legal/ssa">
               US Services Agreement
             </Link>{" "}
             and{" "}
-            <Link href="https://stripe.com/legal/connect-account">
-              Connected Account Agreement,
+            <Link
+              underline="none"
+              href="https://stripe.com/legal/connect-account"
+            >
+              Connected Account Agreement,{" "}
             </Link>
             and may be modified by the third-party from time to time.
           </ListItem>
@@ -532,7 +539,9 @@ export default function TermsContent() {
             or which constitutes child pornography, we ask you to flag the post
             to our attention, or promptly notify us by email at the following
             address:{" "}
-            <Link href="mailto:help@skoolclone.com">help@skoolclone.com.</Link>
+            <Link underline="none" href="mailto:help@skoolclone.com">
+              help@skoolclone.com.{" "}
+            </Link>
             You must use this address if you want to ensure that your complaint
             is actually received by the appropriate person charged with
             responding to such communications.
@@ -618,7 +627,10 @@ export default function TermsContent() {
           copyright owner, and you believe that any User Content infringes on
           your copyrights, you may submit a notification pursuant to the Skool
           Digital Millennium CopyrightAct (DMCA) Notice. Please see our{" "}
-          <Link href="#DMCA">DMCA Policy</Link> for more information.
+          <Link underline="none" href="#DMCA">
+            DMCA Policy
+          </Link>{" "}
+          for more information.
         </Typography>
         <Typography variant="h2">11. Privacy</Typography>
         <Typography>
@@ -626,7 +638,7 @@ export default function TermsContent() {
           collection and use practices. Please refer to it for details about how
           we collect and use your personal information. By agreeing to the terms
           of this Agreement, you are automatically agreeing to our{" "}
-          <Link href="/legal?t=privacy" target="_blank">
+          <Link underline="none" href="/legal?t=privacy" target="_blank">
             Privacy Policy
           </Link>{" "}
           , which is incorporated herein by reference.
@@ -801,17 +813,25 @@ export default function TermsContent() {
             involving claims and counterclaims under $250,000, not inclusive of
             attorneys’ fees and interest, shall be subject to JAMS’s most
             current version of the Streamlined Arbitration Rules and procedures
-            available at
-            <Link href="http://www.jamsadr.com/rules-streamlined-arbitration/">
+            available at{" "}
+            <Link
+              underline="none"
+              href="http://www.jamsadr.com/rules-streamlined-arbitration/"
+            >
               http://www.jamsadr.com/rules-streamlined-arbitration/
-            </Link>
+            </Link>{" "}
             ; all other claims shall be subject to JAMS’s most current version
             of the Comprehensive Arbitration Rules and Procedures, available at{" "}
-            <Link href="http://www.jamsadr.com/rules-comprehensive-arbitration/">
+            <Link
+              underline="none"
+              href="http://www.jamsadr.com/rules-comprehensive-arbitration/"
+            >
               http://www.jamsadr.com/rules-comprehensive-arbitration/
             </Link>
-            . JAMS’s rules are also available at
-            <Link href="www.jamsadr.com">www.jamsadr.com</Link>
+            . JAMS’s rules are also available at{" "}
+            <Link underline="none" href="www.jamsadr.com">
+              www.jamsadr.com
+            </Link>{" "}
             (under the Rules/Clauses tab) or by calling JAMS at 800-352-5267.
             Payment of all filing, administration, and arbitration fees will be
             governed by JAMS’s rules. If the arbitrator finds that you cannot
@@ -899,9 +919,11 @@ export default function TermsContent() {
             Agreement. Your notice must include your name and address, your
             email address (if you have one), anda CLEAR statement that you want
             to opt out of this Arbitration Agreement. You must send your opt-out
-            notice to:
-            <Link href="mailto: help@skoolclone.com">help@skoolclone.com</Link>.
-            If you opt out of this Arbitration Agreement, all other parts of
+            notice to:{" "}
+            <Link underline="none" href="mailto: help@skoolclone.com">
+              help@skoolclone.com
+            </Link>{" "}
+            . If you opt out of this Arbitration Agreement, all other parts of
             this Agreement will continue to apply to you. Opting out of this
             Arbitration Agreement has no effect on any other arbitration
             agreements that you may have entered into with us or may enter into
@@ -985,8 +1007,11 @@ export default function TermsContent() {
         </List>
         <Typography variant="h2">20. Contact Information</Typography>
         <Typography>
+          {" "}
           111 Main St. El Segundo, CA 90245
-          <Link href="mailto:  help@skoolclone.com">help@skoolclone.com</Link>
+          <Link underline="none" href="mailto:  help@skoolclone.com">
+            help@skoolclone.com
+          </Link>{" "}
         </Typography>
       </section>
       <section id="DMCA">
@@ -1002,7 +1027,10 @@ export default function TermsContent() {
           to the Service and terminate the accounts of any users of the Service
           who infringe any intellectual property rights of others, whether or
           not there is any repeat infringement. See our{" "}
-          <Link href="#terms">Terms</Link> for more information.
+          <Link underline="none" href="#terms">
+            Terms
+          </Link>{" "}
+          for more information.
         </Typography>
       </section>
       <Typography variant="h1">
@@ -1065,7 +1093,9 @@ export default function TermsContent() {
         forth below:
       </Typography>
       <Typography>
-        <Link href="mailto:help@skoolclone.com ">help@skoolclone.com</Link>
+        <Link underline="none" href="mailto:help@skoolclone.com ">
+          help@skoolclone.com
+        </Link>
       </Typography>
       <Typography>
         Please note that you may be liable for damages, including court costs

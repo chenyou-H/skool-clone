@@ -12,6 +12,9 @@ import {
   SkoolRulesContent,
   PrivacyPolicyContent,
   TermsContent,
+  CookieContent,
+  TransactionContent,
+  AccetableContent,
 } from "@/components/EntryRelatedPages";
 // import SkoolRulesContent from "@/components/EntryRelatedPages/LegalComponents/contents/SkoolRulesContent";
 // import PrivacyPolicyContent from "@/components/EntryRelatedPages/LegalComponents/contents/PrivacyPolicyContent";
@@ -75,6 +78,16 @@ const findCurrentContentByT = (param: string | undefined) => {
     case "terms":
       currentContent = <TermsContent />;
       break;
+    case "cookies":
+      currentContent = <CookieContent />;
+      break;
+    case "transaction":
+      currentContent = <TransactionContent />;
+      break;
+    case "acceptable-use":
+      currentContent = <AccetableContent />;
+      break;
+
     default:
       currentContent = <SkoolRulesContent />;
   }

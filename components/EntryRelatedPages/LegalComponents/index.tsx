@@ -7,4 +7,7 @@ export {
   SkoolRulesContent,
   PrivacyPolicyContent,
   TermsContent,
+  CookieContent,
+  TransactionContent,
+  AccetableContent,
 } from "./contents";

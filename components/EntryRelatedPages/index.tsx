@@ -12,6 +12,9 @@ export {
   SkoolRulesContent,
   PrivacyPolicyContent,
   TermsContent,
+  CookieContent,
+  TransactionContent,
+  AccetableContent,
 } from "./LegalComponents";
 
 // export {
