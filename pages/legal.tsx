@@ -16,11 +16,7 @@ import {
   TransactionContent,
   AccetableContent,
 } from "@/components/EntryRelatedPages";
-// import SkoolRulesContent from "@/components/EntryRelatedPages/LegalComponents/contents/SkoolRulesContent";
-// import PrivacyPolicyContent from "@/components/EntryRelatedPages/LegalComponents/contents/PrivacyPolicyContent";
-
-// import { useRouter } from "next/router";
-// import { useSearchParams } from "next/navigation";
+import { SideListItem } from "@/components/EntryRelatedPages/LegalComponents";
 
 const title = "Skool policies";
 const content =
@@ -28,17 +24,19 @@ const content =
 
 export const getServerSideProps = async (context) => {
   const query = context.query;
-  console.log("query: ", query);
+  // console.log("query: ", query);
   return { props: { query } };
 };
 
 export default function Legal({ query }) {
-  const [value, setValue] = useState(0);
+  const [btnSelected, setBtnSelected] = useState(
+    findCurrentContentIndexByT(query.t)
+  );
 
   let currentContent = findCurrentContentByT(query.t);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
+    setBtnSelected(newValue);
   };
 
   return (
@@ -48,15 +46,13 @@ export default function Legal({ query }) {
         <Container maxWidth="lg">
           <Grid container spacing={1}>
             <Grid item xs={4} sx={{ overflow: "clip" }}>
-              <SideTabs value={value} handleChange={handleChange} />
+              <SideTabs
+                btnSelected={btnSelected}
+                setBtnSelected={setBtnSelected}
+              />
+              {/* <SideListItem /> */}
             </Grid>
             <Grid item xs={8}>
-              {/* <LegalContentContainer value={value} index={0}>
-                <SkoolRulesContent />
-              </LegalContentContainer>
-              <LegalContentContainer value={value} index={1}>
-                <PrivacyPolicyContent />
-              </LegalContentContainer> */}
               <LegalContentContainer>{currentContent}</LegalContentContainer>
             </Grid>
           </Grid>
@@ -90,6 +86,34 @@ const findCurrentContentByT = (param: string | undefined) => {
 
     default:
       currentContent = <SkoolRulesContent />;
+  }
+  return currentContent;
+};
+
+const findCurrentContentIndexByT = (param: string | undefined) => {
+  let currentContent = null;
+  switch (param) {
+    case "rules":
+      currentContent = 0;
+      break;
+    case "privacy":
+      currentContent = 1;
+      break;
+    case "terms":
+      currentContent = 2;
+      break;
+    case "cookies":
+      currentContent = 3;
+      break;
+    case "transaction":
+      currentContent = 4;
+      break;
+    case "acceptable-use":
+      currentContent = 5;
+      break;
+
+    default:
+      currentContent = 1;
   }
   return currentContent;
 };

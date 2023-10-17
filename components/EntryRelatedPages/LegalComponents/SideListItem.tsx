@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// import Link from "next/link";
+import Link from "@mui/material/Link";
 
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -16,17 +18,16 @@ const list = [
   "Acceptable use",
 ];
 
-// const StyledListItemButton = styled(ListItemButton)({
-//   "&$selected": {
-//     backgroundColor: "red",
-//   },
-//   "&:focus": {
-//     backgroundColor: "red",
-//   },
-//   "&:hover": {
-//     backgroundColor: "orange",
-//   },
-// });
+const urls = [
+  "/legal?t=rules",
+  "/legal?t=privacy",
+  "legal?t=terms",
+  "legal?t=cookies",
+  "legal?t=transaction",
+  "legal?t=acceptable-use",
+];
+
+const orangeBackgroundColor = "rgb(250, 227, 172)";
 
 export default function SideListItem() {
   let [focusIndex, setFocusIndex] = useState(0);
@@ -36,26 +37,37 @@ export default function SideListItem() {
   };
 
   return (
-    <div>
+    <List sx={{ padding: "0 16px" }}>
       {list.map((item, index) => (
         <ListItem key={index} sx={{ padding: "0" }}>
-          <ListItemButton
-            onClick={() => {
-              handleClickButton(index);
-            }}
-            autoFocus={focusIndex === index}
-            sx={{
-              borderRadius: "10px",
-              padding: "0 16px 0 16px",
-              "&:focus": {
-                backgroundColor: "rgb(250, 227, 172)",
-              },
-            }}
-          >
-            <ListItemText primary={item} />
-          </ListItemButton>
+          <Link href={urls[index]} underline="none">
+            <ListItemButton
+              onClick={() => {
+                handleClickButton(index);
+              }}
+              autoFocus={focusIndex === index}
+              sx={{
+                color: "black",
+                justifyContent: "flex-start",
+                borderRadius: "10px",
+                padding: "0 16px",
+                height: "48px",
+                width: "241px",
+                "&:hover": {
+                  backgroundColor: "rgb(228, 228, 228)",
+                },
+                "&:focus": {
+                  color: "black",
+                  backgroundColor: orangeBackgroundColor,
+                },
+              }}
+            >
+              <b>{item}</b>
+              {/* <ListItemText primary={item} /> */}
+            </ListItemButton>
+          </Link>
         </ListItem>
       ))}
-    </div>
+    </List>
   );
 }

@@ -1,12 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+
+import styles from "./SideTabs.module.css";
 
 const tabList = [
   "Skool rules",
@@ -27,8 +25,8 @@ const urls = [
 ];
 
 interface SideTabsProps {
-  value: number;
-  handleChange: () => void;
+  btnSelected: number;
+  handleCickButton: (arg: number) => void;
 }
 
 function a11yProps(index: number) {
@@ -38,82 +36,27 @@ function a11yProps(index: number) {
   };
 }
 
-const orangeBackgroundColor = "rgb(250, 227, 172)";
-
-export default function SideTabs({ value, handleChange }: SideTabsProps) {
-  // return (
-  //   <Tabs
-  //     value={value}
-  //     onChange={handleChange}
-  //     aria-label="basic tabs example"
-  //     orientation="vertical"
-  //   >
-  //     {tabList.map((tab, index) => (
-  //       <Link href={urls[index]} key={tab}>
-  //         {/* <Tab
-  //           label={tab}
-  //           // {...a11yProps(index)}
-  //           sx={{
-  //             color: "black",
-  //             borderRadius: "10px",
-  //             padding: "0 16px 0 16px",
-  //             "&:focus": {
-  //               color: "black",
-  //               backgroundColor: "rgb(250, 227, 172)",
-  //             },
-  //             "&:select": {
-  //               color: "black",
-  //               backgroundColor: "rgb(250, 227, 172)",
-  //             },
-  //           }}
-  //         ></Tab> */}
-  //         <Button
-  //           // label={tab}
-  //           // {...a11yProps(index)}
-  //           sx={{
-  //             color: "black",
-  //             borderRadius: "10px",
-  //             padding: "0 16px 0 16px",
-  //             "&:focus": {
-  //               color: "black",
-  //               backgroundColor: "rgb(250, 227, 172)",
-  //             },
-  //             "&:select": {
-  //               color: "black",
-  //               backgroundColor: "rgb(250, 227, 172)",
-  //             },
-  //           }}
-  //         >
-  //           {tab}
-  //         </Button>
-  //       </Link>
-  //     ))}
-  //   </Tabs>
-  // );
+export default function SideTabs({
+  btnSelected,
+  handleCickButton,
+}: SideTabsProps) {
   return (
     <Stack sx={{ padding: "0 16px" }}>
       {tabList.map((tab, index) => (
         <Link href={urls[index]} key={tab}>
           <Button
-            autoFocus
+            className={btnSelected === index ? styles.selected : ""}
             fullWidth
+            onClick={() => handleCickButton(index)}
             sx={{
               color: "black",
               justifyContent: "flex-start",
               borderRadius: "10px",
-              padding: "0 16px 0 16px",
+              padding: "0 16px",
               height: "48px",
               width: "241px",
-              // "&:select": {
-              //   color: "black",
-              //   backgroundColor: orangeBackgroundColor,
-              // },
               "&:hover": {
                 backgroundColor: "rgb(228, 228, 228)",
-              },
-              "&:focus": {
-                color: "black",
-                backgroundColor: orangeBackgroundColor,
               },
             }}
           >
