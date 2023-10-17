@@ -48,7 +48,6 @@ export default function SideListItem() {
               borderRadius: "10px",
               padding: "0 16px 0 16px",
               "&:focus": {
-                // backgroundColor: "red",
                 backgroundColor: "rgb(250, 227, 172)",
               },
             }}
