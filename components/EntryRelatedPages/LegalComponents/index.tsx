@@ -1,7 +1,7 @@
 // export { default as SideList } from "./SideList";
-export { default as SideListItem } from "./SideListItem";
+
 export { default as LegalContentContainer } from "./LegalContentContainer";
-export { default as SideTabs } from "./SideTabs";
+export { SideTabs } from "./SideTabs";
 
 export {
   SkoolRulesContent,
@@ -11,3 +11,5 @@ export {
   TransactionContent,
   AccetableContent,
 } from "./contents";
+
+export { default as Navigator } from "./Navigator";

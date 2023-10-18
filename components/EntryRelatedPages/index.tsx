@@ -15,10 +15,5 @@ export {
   CookieContent,
   TransactionContent,
   AccetableContent,
+  Navigator,
 } from "./LegalComponents";
-
-// export {
-//   SkoolRulesContent,
-//   PrivacyPolicyContent,
-//   TermsContent,
-// } from "./LegalComponents/contents";

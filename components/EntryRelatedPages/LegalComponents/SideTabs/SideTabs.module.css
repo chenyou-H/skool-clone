@@ -1,0 +1,17 @@
+.btn {
+  color: black;
+  justify-content: flex-start;
+  border-radius: 10px;
+  padding: 0 16px;
+  height: 48px;
+  width: 241px;
+}
+
+.btn:hover {
+  background-color: "rgb(228, 228, 228)";
+}
+
+.selected {
+  color: black;
+  background-color: rgb(250, 227, 172);
+}

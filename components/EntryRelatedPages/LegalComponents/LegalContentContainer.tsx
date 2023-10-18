@@ -63,26 +63,6 @@ export default function LegalContentContainer(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
   return (
     <ThemeProvider theme={theme}>
-      {/* <Box sx={{ backgroundColor: "white" }}>
-        <Paper sx={{ padding: "32px" }}>
-          <SkoolRulesContent />
-          <PrivacyPolicyContent />
-        </Paper>
-      </Box> */}
-
-      {/* <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ backgroundColor: "white" }}>
-            <Paper sx={{ padding: "32px" }}>{children}</Paper>
-          </Box>
-        )}
-      </div> */}
       <div>
         <Box sx={{ backgroundColor: "white" }}>
           <Paper sx={{ padding: "32px" }}>{children}</Paper>

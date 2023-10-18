@@ -7,7 +7,6 @@ import Container from "@mui/material/Container";
 import PageHead from "@/components/shared/PageHead";
 import {
   LegalContentContainer,
-  // SideList,
   SideTabs,
   SkoolRulesContent,
   PrivacyPolicyContent,
@@ -15,8 +14,8 @@ import {
   CookieContent,
   TransactionContent,
   AccetableContent,
+  Navigator,
 } from "@/components/EntryRelatedPages";
-import { SideListItem } from "@/components/EntryRelatedPages/LegalComponents";
 
 const title = "Skool policies";
 const content =
@@ -35,7 +34,7 @@ export default function Legal({ query }) {
 
   let currentContent = findCurrentContentByT(query.t);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleClickButton = (newValue: number) => {
     setBtnSelected(newValue);
   };
 
@@ -43,14 +42,14 @@ export default function Legal({ query }) {
     <>
       <PageHead title={title} content={content} />
       <Box sx={{ backgroundColor: "#F8F7F5" }}>
+        <Navigator />
         <Container maxWidth="lg">
           <Grid container spacing={1}>
             <Grid item xs={4} sx={{ overflow: "clip" }}>
               <SideTabs
                 btnSelected={btnSelected}
-                setBtnSelected={setBtnSelected}
+                handleClickButton={handleClickButton}
               />
-              {/* <SideListItem /> */}
             </Grid>
             <Grid item xs={8}>
               <LegalContentContainer>{currentContent}</LegalContentContainer>
