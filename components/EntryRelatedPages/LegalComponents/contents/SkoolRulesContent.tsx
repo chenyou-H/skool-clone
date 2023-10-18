@@ -11,8 +11,8 @@ export default function SkoolRulesContent() {
       <section>
         <Typography variant="h1">Skool rules</Typography>
         <Typography>
-          This policy is a "living" document, and subject to refinement and
-          expansion in the future.
+          This policy is a &quot;living&quot; document, and subject to
+          refinement and expansion in the future.
         </Typography>
         <Typography>
           Skool is dedicated to providing a harassment-free experience for
@@ -56,7 +56,7 @@ export default function SkoolRulesContent() {
           </ListItem>
           <ListItem>
             <ListItemText>
-              Deliberate misgendering or use of 'dead’ or rejected names.
+              Deliberate misgendering or use of &#39;dead’ or rejected names.
             </ListItemText>
           </ListItem>
           <ListItem>

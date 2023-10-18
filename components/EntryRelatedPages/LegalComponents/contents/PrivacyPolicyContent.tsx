@@ -11,12 +11,12 @@ export default function PrivacyPolicyContent() {
       <Typography variant="h1">Skool Privacy Policy</Typography>
       <Typography>Last Updated: September 29, 2021</Typography>
       <Typography>
-        This Privacy Policy (“Privacy Policy") explains our privacy practices
-        for the activities described herein. Please read this Privacy Policy
-        carefully to learn how we collect, use, share, and otherwise process
-        services as the controller, please contact our customer directly. We are
-        information relating to individuals (“Personal Data”), and to learn
-        about your rights and choices regarding your Personal Data.
+        This Privacy Policy (“Privacy Policy&#34;) explains our privacy
+        practices for the activities described herein. Please read this Privacy
+        Policy carefully to learn how we collect, use, share, and otherwise
+        process services as the controller, please contact our customer
+        directly. We are information relating to individuals (“Personal Data”),
+        and to learn about your rights and choices regarding your Personal Data.
       </Typography>
       <Typography>
         A reference to “Skool,” “we,” “us” or the “Company” is a reference to

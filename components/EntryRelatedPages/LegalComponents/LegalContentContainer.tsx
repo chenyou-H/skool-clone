@@ -55,17 +55,16 @@ const theme = createTheme({
 
 interface TabPanelProps {
   children?: React.ReactNode;
-  index: number;
-  value: number;
 }
 
-export default function LegalContentContainer(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
+export default function LegalContentContainer({ children }: TabPanelProps) {
   return (
     <ThemeProvider theme={theme}>
       <div>
         <Box sx={{ backgroundColor: "white" }}>
-          <Paper sx={{ padding: "32px" }}>{children}</Paper>
+          <Paper sx={{ padding: "32px", borderRadius: "10px" }}>
+            {children}
+          </Paper>
         </Box>
       </div>
     </ThemeProvider>

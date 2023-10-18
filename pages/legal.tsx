@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -21,13 +22,14 @@ const title = "Skool policies";
 const content =
   "Skool is a platform where people learn together online. Courses + community + chat. Join now for free!";
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const query = context.query;
-  // console.log("query: ", query);
   return { props: { query } };
 };
 
-export default function Legal({ query }) {
+export default function Legal({
+  query,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [btnSelected, setBtnSelected] = useState(
     findCurrentContentIndexByT(query.t)
   );
