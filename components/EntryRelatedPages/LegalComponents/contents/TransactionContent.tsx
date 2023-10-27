@@ -12,9 +12,9 @@ export default function TransactionContent() {
       <Typography>Skool Transaction Terms</Typography>
       <Typography>
         <b>1. Introduction:</b>
-        These Transaction Terms between Admins and Members ("Transaction Terms")
-        set out the terms which govern each transaction between an Admin and a
-        Member (as defined below) on Skool.
+        These Transaction Terms between Admins and Members (&quot;Transaction
+        Terms&quot;) set out the terms which govern each transaction between an
+        Admin and a Member (as defined below) on Skool.
       </Typography>
       <Typography>
         <b>2. Applicability of Transaction Terms:</b>
@@ -22,7 +22,7 @@ export default function TransactionContent() {
         Skool, these Transaction Terms will apply to the exclusion of any other
         terms which the Admin or Member may propose to each other, and these
         Transaction Terms will legally bind the Admin and Member participating
-        in the Admin/Member Transaction. All terms set forth in Skool's{" "}
+        in the Admin/Member Transaction. All terms set forth in Skool&apos;s{" "}
         <Link href="/legal?t=privacy" underline="none" target="_blank">
           Privacy Policy
         </Link>{" "}
@@ -43,44 +43,47 @@ export default function TransactionContent() {
         nor any of its subsidiaries or affiliates grant any rights in respect
         of, nor participate in, any Admin/Member Transaction, except that
         Skool.Com, Inc., or any of its subsidiaries or affiliates may act as a
-        payment intermediary in accordance with the Admin's or Member's
-        instructions set out in Section 5 of these Transaction Terms.
+        payment intermediary in accordance with the Admin&apos;s or
+        Member&apos;s instructions set out in Section 5 of these Transaction
+        Terms.
       </Typography>
       <Typography>
         <b>4. Interpretation:</b> In these Transaction Terms, defined terms have
         the following meanings:
       </Typography>
       <Typography>
-        <b>a. "Skool"</b> means the website, applications, and subdomains;
+        <b>a. `&quot;Skool`&quot;</b> means the website, applications, and
+        subdomains;
       </Typography>
       <Typography>
-        <b>b. "Content"</b> means any material uploaded to Skool by any User (as
-        defined in Skool's Terms and Conditions, whether an Admin or a Member,
-        including any photos, videos, audio (e.g., music and other sounds),
-        livestream material, data, text (such as comments and hashtags),
-        metadata, images, interactive features, emojis, GIFs, memes, and other
-        material whatsoever;
+        <b>b. `&quot;Content`&quot;</b> means any material uploaded to Skool by
+        any User (as defined in Skool&apos;s Terms and Conditions, whether an
+        Admin or a Member, including any photos, videos, audio (e.g., music and
+        other sounds), livestream material, data, text (such as comments and
+        hashtags), metadata, images, interactive features, emojis, GIFs, memes,
+        and other material whatsoever;
       </Typography>
       <Typography>
-        <b>c. "Admin"</b> means a User who has set up their Skool account as a
-        creator account to post Content on Skool to be viewed by other Users;
+        <b>c. `&quot;Admin`&quot;</b> means a User who has set up their Skool
+        account as a creator account to post Content on Skool to be viewed by
+        other Users;
       </Typography>
       <Typography>
-        <b>d. "Member"</b> means a User who subscribes to an Admin to view the
-        Admin's restricted Content;
+        <b>d. `&quot;Member`&quot;</b> means a User who subscribes to an Admin
+        to view the Admin&apos;s restricted Content;
       </Typography>
       <Typography>
-        <b>e. "Admin/Member Transaction"</b> means any transaction between an
-        Admin and a Member on Skool by which access is granted to the Admin's
-        Content, including a Subscription;
+        <b>e. `&quot;Admin/Member Transaction`&quot;</b> means any transaction
+        between an Admin and a Member on Skool by which access is granted to the
+        Admin&apos;s Content, including a Subscription;
       </Typography>
       <Typography>
-        <b>f. "Member Payment"</b> means (i) any and all payments made by a
-        Member in respect of any Admin/Member Transaction; and
+        <b>f. `&quot;Member Payment`&quot;</b> means (i) any and all payments
+        made by a Member in respect of any Admin/Member Transaction; and
       </Typography>
       <Typography>
-        <b>g. "Subscription"</b> means a Member's subscription to an Admin's
-        community.
+        <b>g. `&quot;Subscription`&quot;</b> means a Member&apos;s subscription
+        to an Admin&apos;s community.
       </Typography>
       <Typography>
         <b>5. Automatic Renewal Subscription and Payment Terms:</b>
@@ -88,12 +91,12 @@ export default function TransactionContent() {
       <Typography>
         <b>a.</b> By entering into an Admin/Member Transaction, the Member
         agrees to pay the Member Payment applicable to the relevant Admin/Member
-        Transaction in accordance with the pricing published on the communities'
-        respective about page. The Member and the Admin participating in the
-        Admin/Member Transaction authorize Skool.Com, Inc., or any of its
-        subsidiaries or affiliates to act as a payment intermediary and to
-        collect, hold, and process the Member Payment, and to pay out the sums
-        due to Admins.
+        Transaction in accordance with the pricing published on the
+        communities&apos; respective about page. The Member and the Admin
+        participating in the Admin/Member Transaction authorize Skool.Com, Inc.,
+        or any of its subsidiaries or affiliates to act as a payment
+        intermediary and to collect, hold, and process the Member Payment, and
+        to pay out the sums due to Admins.
       </Typography>
       <Typography>
         <b>b.</b> Admins are solely responsible for determining (within the
@@ -107,18 +110,18 @@ export default function TransactionContent() {
       <Typography>
         <b>d.</b> To be able to enter an Admin/Member Transaction with a
         particular Admin, Members must have added a payment card to their
-        account and then click the "Subscribe" button on the relevant Admin's
-        community.
+        account and then click the &quot;Subscribe&quot; button on the relevant
+        Admin&apos;s community.
       </Typography>
       <Typography>
         <b>e.</b> By entering into these Transaction Terms, the Member
         authorizes Skool.Com, Inc., and any of its subsidiaries or affiliates to
-        supply the Member's payment card details to a third-party payment
+        supply the Member&apos;s payment card details to a third-party payment
         provider, including Stripe, Inc., for the purpose of processing the
         Member Payment. These third-party payment providers are subject to
         separate terms and conditions, which may be modified by such third
         parties from time to time. Members agree and undertake to be bound by
-        these third-party terms and conditions, which include Stripe's{" "}
+        these third-party terms and conditions, which include Stripe&apos;s{" "}
         <Link
           href="https://stripe.com/legal/ssa"
           underline="none"
@@ -134,12 +137,13 @@ export default function TransactionContent() {
         >
           Connected Account Agreement
         </Link>
-        . All Member Payments will be charged in USD. The Member's payment card
-        provider may charge the Member currency conversion fees. Skool.Com,
+        . All Member Payments will be charged in USD. The Member&apos;s payment
+        card provider may charge the Member currency conversion fees. Skool.Com,
         Inc., has no control over currency exchange rates or charges imposed by
-        the Member's payment card provider or ban, and Skool.Com, Inc., and its
-        subsidiary or affiliate companies will not be responsible for paying any
-        charges or fees imposed by the Member's payment card provider or bank.
+        the Member&apos;s payment card provider or ban, and Skool.Com, Inc., and
+        its subsidiary or affiliate companies will not be responsible for paying
+        any charges or fees imposed by the Member&apos;s payment card provider
+        or bank.
       </Typography>
       <Typography>
         <b>f.</b> If a Member provides details of two or more payment cards,
@@ -149,21 +153,22 @@ export default function TransactionContent() {
       </Typography>
       <Typography>
         <b>g.</b> The payment provider will take (i) periodic payments from the
-        Member's payment card for Member Payments which are Subscriptions; and
-        (ii) immediate payments from Member's payment card for Member Payments
-        other than Subscriptions. Members authorize and consent to each of these
-        payments being debited using the Member's supplied payment card details.
+        Member&apos;s payment card for Member Payments which are Subscriptions;
+        and (ii) immediate payments from Member&apos;s payment card for Member
+        Payments other than Subscriptions. Members authorize and consent to each
+        of these payments being debited using the Member&apos;s supplied payment
+        card details.
       </Typography>
       <Typography>
         <b>h.</b> Apart from free-trial Subscriptions, all Subscriptions to an
         Admin will automatically renew at the end of the relevant subscription
-        period, except if the Member's payment card is declined, the
+        period, except if the Member&apos;s payment card is declined, the
         subscription price for the Subscription has increased, or the Member has
         canceled the subscription.
       </Typography>
       <Typography>
         <b>i.</b> <u>Cancellation.</u> Either Skool or Admin may cancel a
-        Member's Subscription at any time for any reason (unless otherwise
+        Member&apos;s Subscription at any time for any reason (unless otherwise
         stated in an applicable promotional offer). In the event of cancellation
         by Skool or by Admin, all fees due to Admin up to the end of the
         then-current term renewal period at the time of cancellation shall
@@ -176,8 +181,8 @@ export default function TransactionContent() {
         Members may cancel their subscription by any of the methods below:
       </Typography>
       <Typography>
-        • By clicking "cancel subscription" in the memberships tab of your user
-        settings;
+        • By clicking &quot;cancel subscription&quot; in the memberships tab of
+        your user settings;
       </Typography>
       <Typography>
         • Contacting the Admin of the community via chat or support email; or
@@ -191,49 +196,50 @@ export default function TransactionContent() {
       <Typography>
         SUBSCRIPTION PAYMENTS AUTOMATICALLY RENEW FOR INDEFINITE SUCCESSIVE
         RENEWAL TERMS FOR THE SAME PERIOD AS THE INITIAL TERM, UNTIL CANCELED BY
-        THE MEMBER OR SKOOL. IF A MEMBER WANTS TO STOP SUBSCRIBING TO AN ADMIN'S
-        COMMUNITY AND THEREFORE STOP PAYING CONTINUING MONTHLY SUBSCRIPTION
-        CHARGES, THE MEMBER MUST CANCEL THEIR SUBSCRIPTION BY CLICKING "CANCEL
-        SUBSCRIPTION" IN THE MEMBERSHIP TAB OF THE MEMBER'S SETTINGS, CONTACTING
-        THE ADMIN OF THE COMMUNITY TO WHICH THE MEMBER IS SUBSCRIBED, OR
-        CONTACTING US AT
+        THE MEMBER OR SKOOL. IF A MEMBER WANTS TO STOP SUBSCRIBING TO AN
+        ADMIN&apos;S COMMUNITY AND THEREFORE STOP PAYING CONTINUING MONTHLY
+        SUBSCRIPTION CHARGES, THE MEMBER MUST CANCEL THEIR SUBSCRIPTION BY
+        CLICKING &quot;CANCEL SUBSCRIPTION&quot; IN THE MEMBERSHIP TAB OF THE
+        MEMBER&apos;S SETTINGS, CONTACTING THE ADMIN OF THE COMMUNITY TO WHICH
+        THE MEMBER IS SUBSCRIBED, OR CONTACTING US AT
         <Link underline="none" href="mailto:help@skoolclone.com">
           help@skoolclone.com
         </Link>
         For free-trial Subscriptions, unless the Member cancels their
-        Subscription for the Admin's community before the free trial ends, the
-        Member will be charged for the first time after the specified free trial
-        period ends and the Member will start an automatically renewing paid
-        Subscription of the type associated with the particular free trial.
+        Subscription for the Admin&apos;s community before the free trial ends,
+        the Member will be charged for the first time after the specified free
+        trial period ends and the Member will start an automatically renewing
+        paid Subscription of the type associated with the particular free trial.
       </Typography>
       <Typography>
         <b>j.</b> If a Member cancels a Subscription, the Member will continue
-        to be permitted to view the relevant Admin's Content until the end of
-        the subscription period in which the Member canceled, after which no
-        further payments will be taken from the Member's payment card in respect
-        of Subscriptions to that Admin's community (unless the Member chooses to
-        pay for a new Subscription to that Admin's community), and the Member
-        will no longer be able to view the relevant Admin's Content.
+        to be permitted to view the relevant Admin&apos;s Content until the end
+        of the subscription period in which the Member canceled, after which no
+        further payments will be taken from the Member&apos;s payment card in
+        respect of Subscriptions to that Admin&apos;s community (unless the
+        Member chooses to pay for a new Subscription to that Admin&apos;s
+        community), and the Member will no longer be able to view the relevant
+        Admin&apos;s Content.
       </Typography>
       <Typography>
         <b>j.</b> The Member agrees that the Member will not make unjustified
         requests for a refund in respect of any Admin/Member Transaction, or
-        unjustified chargeback requests of the Member's payment card provider in
-        relation to any Admin/Member Transaction.
+        unjustified chargeback requests of the Member&apos;s payment card
+        provider in relation to any Admin/Member Transaction.
       </Typography>
       <Typography>
         <b>6. License of Content:</b> Once the Member has made the Member
         Payment for an Admin/Member Transaction, the Admin grants to the Member
         a revocable, limited license to access the applicable Content of that
         Admin to which the Admin/Creator Transaction relates (the{" "}
-        <b>"Relevant Content"</b>). This license is non-transferable,
+        <b>&quot;Relevant Content&quot;</b>). This license is non-transferable,
         non-sublicensable, and non-exclusive, and permits the Member to access
-        and view the Relevant Content for the Member's private, personal,
-        non-promotional, non-commercial use, on the Member's personal device and
-        via a normal web browser (and to make a temporary copy of such Content
-        only to the extent that this is an incidental and technical process
-        forming part of the Member's accessing the Content (i.e., caching)), in
-        accordance with Skool's{" "}
+        and view the Relevant Content for the Member&apos;s private, personal,
+        non-promotional, non-commercial use, on the Member&apos;s personal
+        device and via a normal web browser (and to make a temporary copy of
+        such Content only to the extent that this is an incidental and technical
+        process forming part of the Member&apos;s accessing the Content (i.e.,
+        caching)), in accordance with Skool&apos;s{" "}
         <Link underline="none" target="_blank" href="./legal?t=acceptable-use">
           Acceptable Use Policy
         </Link>
@@ -261,11 +267,11 @@ export default function TransactionContent() {
         period, unless the Subscription is configured to automatically renew;
       </Typography>
       <Typography>
-        <b>c.</b> if the Member's User account is suspended or terminated for
-        any reason;
+        <b>c.</b> if the Member&apos;s User account is suspended or terminated
+        for any reason;
       </Typography>
       <Typography>
-        <b>d.</b> if the Member acts in breach of Skool's
+        <b>d.</b> if the Member acts in breach of Skool&apos;s
         <Link underline="none" target="_blank" href="./legal?t=acceptable-use">
           {" "}
           Acceptable Use Policy
@@ -273,14 +279,14 @@ export default function TransactionContent() {
         (whether in relation to the Relevant Content or at all);
       </Typography>
       <Typography>
-        <b>e.</b> if the Content is removed from the Admin's community; and
+        <b>e.</b> if the Content is removed from the Admin&apos;s community; and
       </Typography>
       <Typography>
         <b>f.</b> if the Member closes their Skool User account.
       </Typography>
       <Typography>
-        <b>9. Cancellation and Refunds:</b> Skool's policy is to not provide
-        refunds. Skool lets Creators offer refunds to Members at their
+        <b>9. Cancellation and Refunds:</b> Skool&apos;s policy is to not
+        provide refunds. Skool lets Creators offer refunds to Members at their
         discretion. If you want a refund, you need to contact the Creator you
         purchased from directly, their support email should be on your receipt.
         Skool reserves the right to issue refunds, at its discretion, depending
@@ -331,8 +337,8 @@ export default function TransactionContent() {
       <Typography>
         <b>f.</b>
         unless there has been negligence or other breach of duty by the Admin,
-        the accessing by the Member of the Admin's Content is entirely at the
-        Member's own risk.
+        the accessing by the Member of the Admin&apos;s Content is entirely at
+        the Member&apos;s own risk.
       </Typography>
       <Typography>
         <b>11. No Guarantees:</b>
@@ -346,10 +352,10 @@ export default function TransactionContent() {
         including:
       </Typography>
       <Typography>
-        <b>a.</b> if the Admin's account is suspended or deleted;
+        <b>a.</b> if the Admin&apos;s account is suspended or deleted;
       </Typography>
       <Typography>
-        <b>b.</b> if the Member's account is suspended or deleted;
+        <b>b.</b> if the Member&apos;s account is suspended or deleted;
       </Typography>
       <Typography>
         <b>c.</b> if the availability of all or any part of the Skool site is

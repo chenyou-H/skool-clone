@@ -29,7 +29,7 @@ export default function AccetableContent() {
       </Typography>
       <Typography>
         The following products and activities are not allowed to be monetized
-        using Skool's payments system. This is almost always because they
+        using Skool&apos;s payments system. This is almost always because they
         violate U.S. federal law, they are prohibited by card network rules, or
         they are restricted by our payment processing partners. If you are
         unsure whether your content is prohibited on Skool, please contact us at{" "}
@@ -70,10 +70,10 @@ export default function AccetableContent() {
         </ListItem>
         <ListItem>Consulting firms</ListItem>
         <ListItem>
-          Services (including, but not limited to, "get rich quick" schemes,
-          business opportunities, investment opportunities, mortgage consulting,
-          real estate purchases, mortgage reduction services and credit repair
-          and protection)
+          Services (including, but not limited to, &quotget rich quick&quot
+          schemes, business opportunities, investment opportunities, mortgage
+          consulting, real estate purchases, mortgage reduction services and
+          credit repair and protection)
         </ListItem>
         <ListItem>
           Billing services (including, but not limited to, accepting payment for
@@ -122,7 +122,7 @@ export default function AccetableContent() {
         <ListItem>Jewelry or beauty products</ListItem>
       </List>
       <Typography>
-        This list is maintained separately from Skool's{" "}
+        This list is maintained separately from Skool&apos;s{" "}
         <Link underline="none" href="/legal?t=terms">
           Terms and conditions
         </Link>{" "}

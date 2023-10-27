@@ -216,12 +216,12 @@ export default function TermsContent() {
         <Typography variant="h2">6. Payment Terms for Group Admins</Typography>
         <Typography>
           <u>On-Time Payment.</u>
-          Admin hereby authorizes Skool to charge Admin's payment method (as
-          specified below), in advance, for the amount of Admin's regular
-          subscription fees, inclusive of any and all Services that Admin has
-          signed up for (collectively, “Subscription Fees”), for each agreed
-          term of the Admin's selected subscription term. Admin hereby
-          authorizes Skool to modify the Subscription Fees charged for a
+          Admin hereby authorizes Skool to charge Admin&apos;s payment method
+          (as specified below), in advance, for the amount of Admin&apos;s
+          regular subscription fees, inclusive of any and all Services that
+          Admin has signed up for (collectively, “Subscription Fees”), for each
+          agreed term of the Admin&apos;s selected subscription term. Admin
+          hereby authorizes Skool to modify the Subscription Fees charged for a
           selected subscription term upon thirty (30) days’ notice to Admin sent
           by e-mail to the address provided on registration. The Subscription
           Fees, when paid, are non-refundable and accrue on the first day of
@@ -234,15 +234,16 @@ export default function TermsContent() {
         <Typography>
           Admin is required to pay all charges on time and agrees to submit an
           accompanying payment authorization in connection with these charges
-          when requested by Skool. Skool may terminate or disable Admin's
+          when requested by Skool. Skool may terminate or disable Admin&apos;s
           subscription if Admin fails to pay fully and in a timely manner all
-          amounts due to Skool. If Admin's payment method expires or is
+          amounts due to Skool. If Admin&apos;s payment method expires or is
           otherwise declined for payment, access to the Services and the Site
-          may be modified, suspended or cancelled, in Skool's sole discretion
-          and without notice to Admin. All fees are quoted and payable in United
-          States Dollars. Admin is also responsible for paying all applicable
-          taxes for Services and/or Content, and any other costs incurred in
-          connection with the use of or access to the Site or its Services.
+          may be modified, suspended or cancelled, in Skool&apos;s sole
+          discretion and without notice to Admin. All fees are quoted and
+          payable in United States Dollars. Admin is also responsible for paying
+          all applicable taxes for Services and/or Content, and any other costs
+          incurred in connection with the use of or access to the Site or its
+          Services.
         </Typography>
         <Typography>
           <u>Payment Methods.</u>
@@ -261,16 +262,16 @@ export default function TermsContent() {
           <u>Subscription Term; Auto Renewal.</u>
           Subscriptions are normally assessed on a monthly or annual basis, but
           other Services and their respective billing arrangements may be made
-          available to Admins at Skool's sole discretion. The Subscription Fees
-          are calculated from the day upon which Admin's paid Subscription
-          commences. From time to time and at its sole discretion, Skool may
-          offer different subscription terms on its Site, and the fees for such
-          subscriptions may vary. The term of Admin's access to the Site,
-          Services and Content is based upon Admin's express agreement and
-          adherence to these Terms and to Admin's fully paid subscription and/or
-          other fees.{" "}
+          available to Admins at Skool&apos;s sole discretion. The Subscription
+          Fees are calculated from the day upon which Admin&apos;s paid
+          Subscription commences. From time to time and at its sole discretion,
+          Skool may offer different subscription terms on its Site, and the fees
+          for such subscriptions may vary. The term of Admin&apos;s access to
+          the Site, Services and Content is based upon Admin&apos;s express
+          agreement and adherence to these Terms and to Admin&apos;s fully paid
+          subscription and/or other fees.{" "}
           <b>
-            Admin's subscription to the Site shall be for the initial term
+            Admin&apos;s subscription to the Site shall be for the initial term
             (e.g., monthly or annually) as may be agreed by Admin and Skool
             through online registration and shall automatically renew for
             indefinite successive renewal terms for the same period as the
@@ -318,17 +319,17 @@ export default function TermsContent() {
           right by Skool under contract, tort or any other legal theory to
           pursue any claim or cause of action against the Admin for violating
           these Terms, including without limitation, monetary damages,
-          injunctive relief, attorney's fees and court costs.
+          injunctive relief, attorney&apos;s fees and court costs.
         </Typography>
         <Typography>
           <u>Account Discrepancies.</u> Admin may contact Skool by e-mail at
           help@skool.com concerning charges or other questions regarding the
-          status of Admin's account. However, if Admin's account-related
-          questions are not satisfactorily resolved within fifteen (15) business
-          days of Admin's first calling or sending an e-mail to Skool Support
-          regarding such questions, Admin must write to Skool at: SKOOL.COM,
-          Inc., 111 Main St. El Segundo, CA 90245, delivered by United States
-          mail.
+          status of Admin&apos;s account. However, if Admin&apos;s
+          account-related questions are not satisfactorily resolved within
+          fifteen (15) business days of Admin&apos;s first calling or sending an
+          e-mail to Skool Support regarding such questions, Admin must write to
+          Skool at: SKOOL.COM, Inc., 111 Main St. El Segundo, CA 90245,
+          delivered by United States mail.
         </Typography>
         <Typography>
           Notwithstanding the foregoing, in no event may Admin dispute any
@@ -353,7 +354,7 @@ export default function TermsContent() {
           </ListItem>
           <ListItem>
             Third-party payment provider terms and conditions, which include
-            Stripe's{" "}
+            Stripe&apos;s{" "}
             <Link underline="none" href="https://stripe.com/legal/ssa">
               US Services Agreement
             </Link>{" "}
@@ -388,7 +389,7 @@ export default function TermsContent() {
         </Typography>
         <List>
           <ListItem>
-            All payments to an Admin's community by a Member (“Member
+            All payments to an Admin&apos;s community by a Member (“Member
             Payment(s)”) will be received by a third-party payment provider
             approved by us.
           </ListItem>
@@ -404,10 +405,10 @@ export default function TermsContent() {
             account.
           </ListItem>
           <ListItem>
-            The amount that you see in your 'current balance' in your Skool
-            account is your Creator Earnings at the relevant time. All Creator
-            Earnings are transacted in USD only. Your bank may charge you
-            currency conversion or transfer fees for access the money.
+            The amount that you see in your &apos;current balance&apos; in your
+            Skool account is your Creator Earnings at the relevant time. All
+            Creator Earnings are transacted in USD only. Your bank may charge
+            you currency conversion or transfer fees for access the money.
           </ListItem>
           <ListItem>
             If a Member successfully seeks a refund or chargeback from their
@@ -737,9 +738,9 @@ export default function TermsContent() {
           WARRANTY OF NON-INFRINGEMENT. YOU ACKNOWLEDGE THAT THE SERVICES
           (INCLUDING ANY SERVERS OR OTHER HARDWARE, SOFTWARE AND ANY OTHER ITEMS
           USED OR PROVIDED BY US IN CONNECTION WITH THE SERVICES) ARE PROVIDED
-          "AS IS" AND THAT WE MAKE NO WARRANTY THAT THE SERVICES WILL BE FREE
-          FROM BUGS, FAULTS, DEFECTS OR ERRORS OR THAT ACCESS TO THE SERVICES
-          WILL BE UNINTERRUPTED.
+          &quot;AS IS&quot; AND THAT WE MAKE NO WARRANTY THAT THE SERVICES WILL
+          BE FREE FROM BUGS, FAULTS, DEFECTS OR ERRORS OR THAT ACCESS TO THE
+          SERVICES WILL BE UNINTERRUPTED.
         </Typography>
         <Typography variant="h2">16. Dispute Resolution</Typography>
         <Typography>
@@ -1019,14 +1020,15 @@ export default function TermsContent() {
         <Typography>
           We respect the copyright and other intellectual property rights of
           others and expect users of our website and application (collectively,
-          the "Services") to do the same. In accordance with the United States
-          Digital Millennium Copyright Act (the "DMCA") and other applicable
-          law, we have a policy of terminating, in appropriate circumstances and
-          at our sole discretion, users of the Service who are deemed to be
-          repeat infringers. We also may, in our sole discretion, limit access
-          to the Service and terminate the accounts of any users of the Service
-          who infringe any intellectual property rights of others, whether or
-          not there is any repeat infringement. See our{" "}
+          the &quot;Services&quot;) to do the same. In accordance with the
+          United States Digital Millennium Copyright Act (the &quot;DMCA&quot;)
+          and other applicable law, we have a policy of terminating, in
+          appropriate circumstances and at our sole discretion, users of the
+          Service who are deemed to be repeat infringers. We also may, in our
+          sole discretion, limit access to the Service and terminate the
+          accounts of any users of the Service who infringe any intellectual
+          property rights of others, whether or not there is any repeat
+          infringement. See our{" "}
           <Link underline="none" href="#terms">
             Terms
           </Link>{" "}
@@ -1099,8 +1101,8 @@ export default function TermsContent() {
       </Typography>
       <Typography>
         Please note that you may be liable for damages, including court costs
-        and attorney's fees, if you materially misrepresent that content on the
-        Services is copyright infringing.
+        and attorney&apos;s fees, if you materially misrepresent that content on
+        the Services is copyright infringing.
       </Typography>
       <Typography>
         Upon receiving a proper notification of alleged copyright infringement,
@@ -1139,7 +1141,7 @@ export default function TermsContent() {
         </ListItem>
         <ListItem>
           A statement that you will accept service of process from the party
-          that filed the Notification or the party's agent.
+          that filed the Notification or the party&apos;s agent.
         </ListItem>
         <ListItem>Your name, address and telephone number.</ListItem>
         <ListItem>
@@ -1165,7 +1167,7 @@ export default function TermsContent() {
         material in question. Please note that if you materially misrepresent
         that the disabled or removed content was removed by mistake or
         misidentification, you may be liable for damages, including costs and
-        attorney's fees. Filing a false Counter Notification constitutes
+        attorney&apos;s fees. Filing a false Counter Notification constitutes
         perjury.
       </Typography>
     </div>
