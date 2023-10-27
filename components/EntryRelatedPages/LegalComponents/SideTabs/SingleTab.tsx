@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Button from "@mui/material/Button";
-
 import styles from "./SideTabs.module.css";
 
 interface SingleTabProps {
@@ -19,12 +18,7 @@ export default function SingleTab({
   index,
   handleClickButton,
 }: SingleTabProps) {
-  let buttonStyles = "";
-  if (btnSelected === index) {
-    buttonStyles = buttonStyles + " " + styles.selected;
-  }
-
-  console.log("indexes: ", btnSelected, " ", index);
+  const buttonStyles = btnSelected === index ? ` ${styles.selected}` : "";
 
   return (
     <Link href={url}>

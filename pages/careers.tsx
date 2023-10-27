@@ -32,8 +32,10 @@ export default function careers() {
           have fun.
         </EntryRelatedPageDescription>
         <Box sx={{ width: "224px", margin: "0 0 180px 0" }}>
-          {/* todo: button link need to be modified later when the job website is implemented*/}
-          <PrimaryButton href="/">SEE OPEN POSITIONS</PrimaryButton>
+          {/* TODO: button link need to be modified later when the job website is implemented*/}
+          <PrimaryButton href="/https://jobs.lever.co/skool">
+            SEE OPEN POSITIONS
+          </PrimaryButton>
         </Box>
       </EntryRelatedPageContainer>
     </>

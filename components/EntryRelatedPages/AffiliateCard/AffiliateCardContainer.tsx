@@ -4,7 +4,17 @@ import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-export default function AffiliateCardContainer({ title, description, imgUrl }) {
+interface AffiliateCardContainerProps {
+  title: string;
+  description: string;
+  imgUrl?: string;
+}
+
+export default function AffiliateCardContainer({
+  title,
+  description,
+  imgUrl,
+}: AffiliateCardContainerProps) {
   if (imgUrl === undefined) {
     return (
       <Box>
@@ -33,7 +43,6 @@ export default function AffiliateCardContainer({ title, description, imgUrl }) {
         <Image
           src={imgUrl}
           alt={title}
-          // fill={true}
           width={335}
           height={102}
           style={{

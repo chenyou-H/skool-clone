@@ -19,10 +19,6 @@ export default function affiliateProgram() {
   const headDescriptionContent =
     "Refer people to Skool and earn 40% of MRR for life!";
 
-  const cardTitle = "1. Share your link";
-  const cardDescriotion =
-    "Share your referral link with your friends, followers, or customers.";
-
   return (
     <>
       <PageHead title={headTitle} content={headDescriptionContent} />
