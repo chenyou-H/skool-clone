@@ -9,7 +9,7 @@ export {
   TermsContent,
   CookieContent,
   TransactionContent,
-  AccetableContent,
+  AcceptableContent,
 } from "./contents";
 
 export { default as Navigator } from "./Navigator";

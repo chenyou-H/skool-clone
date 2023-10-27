@@ -177,10 +177,10 @@ export default function TermsContent() {
             and does not violate any federal or state law concerning child
             pornography or otherwise intended to protect the health or wellbeing
             of minors.
-            <ListItem>
-              Your User Content does not violate any state or federal law
-              designed to regulate electronic advertising.
-            </ListItem>
+          </ListItem>
+          <ListItem>
+            Your User Content does not violate any state or federal law designed
+            to regulate electronic advertising.
           </ListItem>
           <ListItem>
             Your User Content does not contain pictures, data, audio or visual
@@ -445,18 +445,19 @@ export default function TermsContent() {
                 if we suspect that all or any part of the Admin Earnings result
                 from unlawful or fraudulent activity, either by you or by the
                 Member who made the Member Payment resulting in the Admin
-                Earnings, for as long as is necessary to
+                Earnings,
               </ListItem>
             </List>
-            investigate the actual, threatened or suspected breach by you or the
-            suspected unlawful activity (as applicable). If following our
-            investigation, we conclude that (i) you have seriously or repeatedly
-            breached any part of the Agreement; (ii) you have attempted or
-            threatened to breach any part of the Agreement in a way which has or
-            could have serious consequences for us or another User (including
-            actual or possible loss caused to us or another User); and/or (iii)
-            the Admin Earnings result from unlawful or fraudulent activity, we
-            may notify you that you have forfeited your Admin Earnings.
+            for as long as is necessary to investigate the actual, threatened or
+            suspected breach by you or the suspected unlawful activity (as
+            applicable). If following our investigation, we conclude that (i)
+            you have seriously or repeatedly breached any part of the Agreement;
+            (ii) you have attempted or threatened to breach any part of the
+            Agreement in a way which has or could have serious consequences for
+            us or another User (including actual or possible loss caused to us
+            or another User); and/or (iii) the Admin Earnings result from
+            unlawful or fraudulent activity, we may notify you that you have
+            forfeited your Admin Earnings.
           </ListItem>
 
           <ListItem>
@@ -550,28 +551,29 @@ export default function TermsContent() {
           <ListItem>
             In order to respond as quickly as possible to any complaint, please
             provide us with as much detail as possible, including
-            <List sx={{ listStyleType: "lower-roman" }}>
-              <ListItem>
-                the nature of the right infringed or violated (including the
-                registration numbers of any registered copyrights, trademarks or
-                patents allegedly infringed);
-              </ListItem>
-              <ListItem>
-                all facts which lead you to believe that a right has been
-                violated or infringed; the precise location where the offending
-                material is located;
-              </ListItem>
-              <ListItem>
-                any grounds to believe that the person who posted the material
-                was not authorized to do so or did not have a valid defense
-                (including the defense of fair use); and
-              </ListItem>
-              <ListItem>
-                if known, the identity of the person or persons who posted the
-                infringing or offending material
-              </ListItem>
-            </List>
           </ListItem>
+          <List sx={{ listStyleType: "lower-roman" }}>
+            <ListItem>
+              the nature of the right infringed or violated (including the
+              registration numbers of any registered copyrights, trademarks or
+              patents allegedly infringed);
+            </ListItem>
+            <ListItem>
+              all facts which lead you to believe that a right has been violated
+              or infringed; the precise location where the offending material is
+              located;
+            </ListItem>
+            <ListItem>
+              any grounds to believe that the person who posted the material was
+              not authorized to do so or did not have a valid defense (including
+              the defense of fair use); and
+            </ListItem>
+            <ListItem>
+              if known, the identity of the person or persons who posted the
+              infringing or offending material
+            </ListItem>
+          </List>
+
           <ListItem>
             <u>Indemnification/Waiver of Certain Rights.</u>
             By lodging a complaint, you agree that the substance of your

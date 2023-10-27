@@ -1,15 +1,12 @@
 import React from "react";
 
 import Typography from "@mui/material/Typography";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import Link from "@mui/material/Link";
 
 export default function TransactionContent() {
   return (
     <div>
-      <Typography>Skool Transaction Terms</Typography>
+      <Typography variant="h1">Skool Transaction Terms</Typography>
       <Typography>
         <b>1. Introduction:</b>
         These Transaction Terms between Admins and Members (&quot;Transaction
@@ -325,8 +322,6 @@ export default function TransactionContent() {
         in which the Admin will be uploading the Relevant Content, and has
         obtained any and all permission and consents needed to grant the license
         in Section 6 of these Transaction Terms;
-        <Typography></Typography>
-        <b></b>
       </Typography>
       <Typography>
         <b>e.</b>

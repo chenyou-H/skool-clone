@@ -14,6 +14,6 @@ export {
   TermsContent,
   CookieContent,
   TransactionContent,
-  AccetableContent,
+  AcceptableContent,
   Navigator,
 } from "./LegalComponents";

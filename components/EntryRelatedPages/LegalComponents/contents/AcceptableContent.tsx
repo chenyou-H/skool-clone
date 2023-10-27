@@ -5,7 +5,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Link from "@mui/material/Link";
 
-export default function AccetableContent() {
+export default function AcceptableContent() {
   return (
     <div>
       <Typography variant="h1">Acceptable use policy</Typography>
